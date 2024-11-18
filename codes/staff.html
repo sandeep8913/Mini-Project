@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Section</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0dbb67;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .big-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            margin: 60px;
+            padding: 30px 60px;
+            background-color: #03c4ef;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .big-button img {
+            margin-bottom: 10px;
+            width: 70px;
+        }
+
+        .big-button:hover {
+            background-color: #3bbd96;
+            transform: translateY(-5px);
+        }
+
+        .small-button {
+            padding: 10px 20px;
+            background-color: #656464;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .small-button:hover {
+            background-color: #292929;
+        }
+
+        footer {
+            background-color: #0dbb67;
+            color: white;
+            padding: 10px 0;
+        }
+
+        @media (min-width: 600px) {
+            .button-container {
+                flex-direction: row;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Staff Section</h1>
+    </header>
+    <main>
+        <div class="button-container">
+            <a href="fee.php" class="big-button">
+                <img src="https://cdn1.iconfinder.com/data/icons/business-bw-vol-2/100/business-10-31-128.png" alt="Fee Icon" width="40">
+                Fee
+            </a>
+            <a href="lib.php" class="big-button">
+                <img src="https://cdn2.iconfinder.com/data/icons/school-supplies-7/64/164_school-open-study-education-book-library-128.png" alt="Library Icon" width="40">
+                Library
+            </a>
+        </div>
+        <a href="home.html" class="small-button">Back</a>
+    </main>
+    <footer>
+        <p>GCET</p>
+    </footer>
+</body>
+</html>

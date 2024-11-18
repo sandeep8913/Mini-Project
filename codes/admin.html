@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            position: fixed;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #15b00d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .form-container {
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+        .form-container:hover {
+            background-color: #31a052;
+        }
+        .submit-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .form-header {
+            text-align: center;
+        }
+        .x{
+            margin-bottom: 30px;
+        }
+        .form-group{
+            text-align: center;
+        }
+        .back-button-container {
+            margin-bottom: 60px; /* Ensure spacing before footer */
+        }
+    </style>
+</head>
+<body>
+    <header>Admin</header>
+    <br><br>
+    <div class="form-container">
+        <h4 class="form-header">Select Sem to print Hall Ticket</h4>
+        <form action="selectsem.php" method="post">
+            <div class="form-group">
+                <p>I YEAR</p>
+                <input type="radio" id="1-1" name="1" value="1-1">
+                <label for="1-1">ODD</label>
+                <input type="radio" id="1-2" name="1" value="1-2">
+                <label for="1-2">EVEN</label>
+            </div>
+            <div class="form-group">
+                <p>II YEAR</p>
+                <input type="radio" id="2-1" name="2" value="2-1">
+                <label for="2-1">ODD</label>
+                <input type="radio" id="2-2" name="2" value="2-2">
+                <label for="2-2">EVEN</label>
+            </div>
+            <div class="form-group">
+                <p>III YEAR</p>
+                <input type="radio" id="3-1" name="3" value="3-1">
+                <label for="3-1">ODD</label>
+                <input type="radio" id="3-2" name="3" value="3-2">
+                <label for="3-2">EVEN</label>
+            </div>
+            <div class="form-group">
+                <p>IV YEAR</p>
+                <input type="radio" id="4-1" name="4" value="4-1">
+                <label for="4-1">ODD</label>
+                <input type="radio" id="4-2" name="4" value="4-2">
+                <label for="4-2">EVEN</label>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div class="submit-container">
+                    <input type="submit" class="btn btn-primary" value="Select">
+                </div>
+                <div class="submit-container">
+                    <a href="viewsem.php" class="btn btn-secondary">View</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <div class="form-container">
+        <h4 class="form-header">Select Year-Sem to Edit Regular Table:</h4>
+        <form action="dum.php" method="post">
+            <div class="form-group">
+                <input type="radio" id="1-1" name="a" value="1-1" required>
+                <label for="1-1">1-1</label>
+                <input type="radio" id="1-2" name="a" value="1-2">
+                <label for="1-2">1-2</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="2-1" name="a" value="2-1">
+                <label for="2-1">2-1</label>
+                <input type="radio" id="2-2" name="a" value="2-2">
+                <label for="2-2">2-2</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="3-1" name="a" value="3-1">
+                <label for="3-1">3-1</label>
+                <input type="radio" id="3-2" name="a" value="3-2">
+                <label for="3-2">3-2</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="4-1" name="a" value="4-1">
+                <label for="4-1">4-1</label>
+                <input type="radio" id="4-2" name="a" value="4-2">
+                <label for="4-2">4-2</label>
+            </div>
+            <div class="form-group">
+                <h4>Select Branch:</h4>
+                <input type="radio" id="cse" name="b" value="cse" required>
+                <label for="cse">cse</label>
+                <input type="radio" id="ece" name="b" value="ece">
+                <label for="ece">ece</label>
+            </div>
+            <div class="submit-container">
+                <input type="submit" class="btn btn-primary" value="Select">
+            </div>
+        </form>
+    </div>
+
+        
+    <div class="form-container">
+        <h4 class="form-header">Select Year-Sem to Edit CBT Table:</h4>
+        <form action="cbtdum.php" method="post">
+            <div class="form-group">
+                <input type="radio" id="1-1" name="ac" value="1-1" required>
+                <label for="1-1">1-1</label>
+                <input type="radio" id="1-2" name="ac" value="1-2">
+                <label for="1-2">1-2</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="2-1" name="ac" value="2-1">
+                <label for="2-1">2-1</label>
+                <input type="radio" id="2-2" name="ac" value="2-2">
+                <label for="2-2">2-2</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="3-1" name="ac" value="3-1">
+                <label for="3-1">3-1</label>
+                <input type="radio" id="3-2" name="ac" value="3-2">
+                <label for="3-2">3-2</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" id="4-1" name="ac" value="4-1">
+                <label for="4-1">4-1</label>
+                <input type="radio" id="4-2" name="ac" value="4-2">
+                <label for="4-2">4-2</label>
+            </div>
+            <div class="form-group">
+                <h4>Select Branch:</h4>
+                <input type="radio" id="cse" name="bc" value="cse" required>
+                <label for="cse">cse</label>
+                <input type="radio" id="ece" name="bc" value="ece">
+                <label for="ece">ece</label>
+            </div>
+            <div class="submit-container">
+                <input type="submit" class="btn btn-primary" value="Select">
+            </div>
+        </form>
+    </div>
+
+    <!-- New Form -->
+    <div class="form-container">
+        <h4 class="form-header">Student Database</h4>
+        <form action="estd.php" method="get">
+            <div class="submit-container">
+                <input type="submit" class="btn btn-info" value="Edit">
+            </div>
+        </form>
+    </div>
+
+    <div class="form-container x">
+        <h4 class="form-header">Manage Electives</h4>
+        <form action="mnge.php" method="get">
+            <div class="submit-container">
+                <input type="submit" class="btn btn-info" value="click here">
+            </div>
+        </form>
+    </div>
+    <div class="back-button-container text-center">
+        <a href="h1.html" class="btn btn-secondary">Back</a>
+    </div>
+    
+    <footer class="footer">GCET</footer>
+</body>
+</html>

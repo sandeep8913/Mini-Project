@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hall Ticket Generation System</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('hall_tickets_background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h2 {
+      margin-bottom: 40px;
+      color: #333;
+    }
+    .btn-option {
+      width: 180px;
+      height: 140px;
+      font-size: 20px;
+      margin: 20px;
+      color: #333;
+      background-color: #1e87d2;
+      border: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    .btn-option:hover {
+      background-color: #059722;
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    }
+    .header{
+      top:0px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+      position: fixed;
+    }
+    img {
+      height: 80px;
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+  <h1>Hall Ticket Generator</h1>
+</header>
+<div class="container text-center">
+  <h2>Welcome to Hall Ticket Generation System</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="home.html" class="btn btn-option">
+        <img src="https://cdn3.iconfinder.com/data/icons/education-756/140/clipboard__paper__exams__education__sheet-128.png" alt="Regular">
+        Regular
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="cbtstd.php" class="btn btn-option">
+        <img src="https://cdn2.iconfinder.com/data/icons/education-and-learning-47/60/question__quiz__exams__education__online-128.png" alt="CBT">
+        CBT
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="adm.php" class="btn btn-option">
+        <img src="https://cdn0.iconfinder.com/data/icons/network-technology-19/64/systems-admin-owner-personal-programmer-128.png" alt="Admin">
+        Admin
+      </a>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <p>GCET</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
